@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <style>
+        .container-fluid {
+            background: url('https://picsum.photos/1920/1080/?random=1') no-repeat center/cover;
+        }
+
+        .box {
+            width: 25%;
+            height: 60%;
+            background: rgba(255, 255, 255, 0.5);
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.7);
+            border-radius: 1rem;
+            position: relative;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            font-size: 3.3rem;
+            background: rgba(0, 123, 255, 0.7);
+            border-radius: 50%;
+
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        .input-group,
+        .input-group>input {
+            height: 50px;
+        }
+
+        .input-group-text {
+            font-size: 1.5rem;
+            color: #6C6C6C;
+            background: #fff;
+            border-right: none;
+        }
+
+        .form-control {
+            border-left: none;
+        }
+
+        form {
+            margin: 0 3rem;
+        }
+
+        .btn {
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid p-0 vw-100 vh-100 d-flex justify-content-center align-items-center">
+        <div class="box">
+            <div class="logo text-white text-center d-flex justify-content-center align-items-center">
+                <i class="far fa-user"></i>
+            </div>
+            <div class="text-center text-secondary mt-5 py-4">
+                <h1>Sign In</h1>
+            </div>
+            <div class="text-center">
+                <form>
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fas fa-user"></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroupUsername"
+                                    placeholder="Username">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fas fa-lock"></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroupUsername"
+                                    placeholder="Password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary w-100">Log in</button>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <div class="form-check text-left text-white">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label" for="gridCheck1">
+                                    Remember me
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <a class="text-white" href="#">Forgot Password?</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
